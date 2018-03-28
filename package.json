@@ -1,0 +1,16 @@
+{
+  "name": "maze-generator",
+  "version": "1.0.0",
+  "description": "makes mazes with TS",
+  "main": "index.js",
+  "dependencies": {
+    "light-server": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "light-server -s . -p 6090 --open"
+  },
+  "author": "",
+  "license": "MIT"
+}
