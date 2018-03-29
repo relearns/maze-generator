@@ -4,7 +4,8 @@
   "description": "makes mazes with TS",
   "main": "index.js",
   "dependencies": {
-    "light-server": "^2.5.0"
+    "light-server": "^2.5.0",
+    "typescript": "^2.8.1"
   },
   "devDependencies": {},
   "scripts": {

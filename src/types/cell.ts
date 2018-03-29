@@ -1,13 +1,12 @@
-class Cell {
-    x: number;
-    y: number;
-    visited: boolean;
-    northWall: boolean;
-    eastWall: boolean;
-    southWall: boolean;
-    westWall: boolean;
-    
-    constructor(column: number, row: number){
+export class Cell {
+    public x: number;
+    public y: number;
+    public visited: boolean;
+    public northWall: boolean;
+    public eastWall: boolean;
+    public southWall: boolean;
+    public westWall: boolean;
+    constructor(column: number, row: number) {
         this.x = column;
         this.y = row;
         this.visited = false;

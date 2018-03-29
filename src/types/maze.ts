@@ -1,17 +1,18 @@
-class Maze {
-    cells: Cell[][];
-    current: Cell;
-    visitedCount: number;
+import { Cell } from "./cell";
 
-    constructor(width: number, height: number){
+export class Maze {
+    public cells: Cell[][];
+    public current: Cell;
+    public visitedCount: number;
+
+    constructor(width: number, height: number) {
         this.cells = [];
-        for(var i: number = 0; i < width; i++) {
+        for (let i: number = 0; i < width; i++) {
             this.cells[i] = [];
-            for(var j: number = 0; j < height; j++){
+            for (let j: number = 0; j < height; j++) {
                 this.cells[i][j] = new Cell(i, j);
             }
         }
         this.visitedCount = 0;
-        this.current = null;
     }
 }
