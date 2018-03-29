@@ -1,6 +1,10 @@
+import { Maze } from "./src/types/maze";
+
 const canvas = document.getElementById("mazeCanvas") as HTMLCanvasElement;
-let ctx = canvas.getContext("2d");
-if (ctx !== null) {
-    ctx.fillStyle = "rgb(200,0,0)";
-    ctx.fillRect(10, 10, 50, 60);
+const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
+export function drawMaze(x: number, y: number) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const maze = new Maze(x, y);
+  maze.generate();
+  maze.draw(ctx);
 }
