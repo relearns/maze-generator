@@ -6,5 +6,14 @@ export function drawMaze(x: number, y: number) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   const maze = new Maze(x, y, ctx);
   maze.generate();
-  // maze.draw();
+  maze.drawAll();
+}
+let stepMaze: Maze;
+export function drawStep(x: number, y: number) {
+  if (stepMaze === undefined) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    stepMaze = new Maze(x, y, ctx);
+    stepMaze.generate();
+  }
+  stepMaze.drawNext();
 }

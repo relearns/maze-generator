@@ -4,7 +4,7 @@
   <title>Maze demo</title>
   <style type="text/css">
     canvas {
-      border: 1px solid black;
+      border: 2px solid black;
     }
   </style>
 </head>
@@ -13,7 +13,8 @@
   <canvas id="mazeCanvas" width="900" height="900">
   </canvas>
   <br/ >
-  <button type="button" onclick="window.MazeGen.drawMaze(30, 30)">Click</button>
+  <button type="button" onclick="window.MazeGen.drawMaze(30, 30)">Generate Whole Maze</button>
+  <button type="button" onclick="window.MazeGen.drawStep(30, 30)">Step Through Maze</button>
   <script src="dist/bundle.js"></script>
 </body>
 </html>
